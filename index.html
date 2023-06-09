@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive card details form</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@1&family=Josefin+Sans&family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Space+Grotesk&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+ <div class="container">
+  <div class="sub-container1">
+    <div class="img-1">
+      <img src="./images/card-logo.svg" alt="">
+      <div class="card-number">
+        <p id="card-digit"></p>
+        <div class="card-name">
+          <p id="holder-name-value"></p>
+          <p> <span id="month-value"></span> / <span id="year-value"></span></p>
+        </div>
+      </div>
+      <!-- <img src="./images/bg-card-front.png" alt=""> -->
+    </div>
+    <div class="img-2">
+      <p id="cvc-value"></p>
+      <!-- <img src="./images/bg-card-back.png" alt=""> -->
+    </div>
+  </div>
+  <div class="sub-container2">
+    <div class="form">
+      <form action="" method="">
+        <div class="input1">
+          <label>CARD HOLDER NAME</label>
+          <input type="text" onchange="holderNameChange()" id="holder-name" placeholder="e.g. Jane Appleseed">
+          <small class="holder-name-p"></small>
+        </div>
+        <div class="input2">
+          <label>CARD NUMBER</label>
+          <input type="text" maxlength="20" id="card-number" onchange="cardDigit()" placeholder="e.g. 1234 5678 9123 0000">
+          <p class="card-number-error"></p>
+        </div>
+        <div class="input3">
+          <div class="card-details">
+            <label>EXP DATE [MM/YY]</label>
+            <div class="mm-yy">
+              <div class="month-div">
+                <input type="text" maxlength="2" onchange="monthInputValue()" id="month" placeholder="MM">
+                <p class="month-error"></p>
+              </div>
+              <div class="year-div">
+                <input type="text" maxlength="2" id="year" onchange="yearInputValue()" placeholder="YY">
+                <p class="year-error"></p>
+              </div>
+              
+            </div>
+            
+          </div>
+          <div class="card-details2">
+            <label>CVC</label>
+            <input type="text" maxlength="3" id="cvc" onchange="handleCvcChange()" placeholder="e.g 123">
+            <p class="cvc-error"></p>
+          </div>
+        </div>
+        <button type="submit" id="btn">Confirm</button>
+      </form>
+    </div>
+    <div class="completed">
+      <img src="./images/icon-complete.svg" alt="">
+      <h2>THANK YOU</h2>
+      <p>We've added your card details</p>
+      <button id="btn">Continue</button>
+     </div>
+  </div>
+ </div>
+
+ 
+
+ <script type="text/javascript" src="index.js"> </script>
+</body>
+</html>
