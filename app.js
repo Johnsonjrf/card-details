@@ -97,36 +97,3 @@ document.getElementsByTagName("button")[0].addEventListener("click", (event) => 
 
 
 
-// document.getElementsByTagName("button")[0].addEventListener("click", (event) => {
-   
-//     event.preventDefault()
-//     if(!cvc.value) {
-//         document.getElementsByClassName("cvc-error")[0].innerHTML = "cant be blank"
-        
-//     } else {
-//         document.getElementsByClassName("cvc-error")[0].innerHTML = ""
-//     }
-
-//     if(cardNumber.value.match(pattern)) {
-//         document.getElementsByClassName("card-number-error")[0].innerHTML = ""
-//     } else {
-//         document.getElementsByClassName("card-number-error")[0].innerHTML = "enter numbers only"
-//     }
-
-//     if(!holderMonthofBirth.value) {
-//         document.getElementsByClassName("month-error")[0].innerHTML = "cant be blank"
-//     } else {
-//         document.getElementsByClassName("month-error")[0].innerHTML = ""
-//     }
-
-//     if(!holderYearofBirth.value) {
-//         document.getElementsByClassName("year-error")[0].innerHTML = "cant be blank"
-//     } else {
-//         document.getElementsByClassName("year-error")[0].innerHTML = ""
-//     }
-    
-
-    
-    
-// })
-

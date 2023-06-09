@@ -225,6 +225,7 @@ button{
     .sub-container2{
         min-width: 100%;
         max-width: 100%;
+        margin-top: 10%;
         height: 50%;
         display: flex;
         justify-content: center;
@@ -232,7 +233,7 @@ button{
     }
 
     .form{
-        margin: 20% auto 5% auto;
+        margin: 25% auto 5% auto;
         width: 80%;
     }
 
