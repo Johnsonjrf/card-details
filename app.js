@@ -17,15 +17,24 @@ function holderNameChange () {
 }
 
 function cardDigit() {
-
+    let formattedCardDigit = ""
     var cardDigit = document.getElementById("card-number").value
     if(cardDigit.match(pattern)) {
+
+        for(var i = 0; i < cardDigit.length; i++) {
+            if(i > 0 && i % 4 === 0) {
+                formattedCardDigit += " " 
+            }
+    
+            formattedCardDigit += cardDigit[i]
+        }
         
-         document.getElementById("card-digit").innerHTML = cardDigit
+         document.getElementById("card-digit").innerHTML = formattedCardDigit
     } else {
         document.getElementById("card-digit").innerHTML = ""
     }
-    
+
+           
 }
 
 function monthInputValue() {
